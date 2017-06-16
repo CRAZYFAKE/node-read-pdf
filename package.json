@@ -1,27 +1,27 @@
 {
-  "name": "read-pdf",
-  "version": "0.1.0",
-  "description": "A module for node.js,get pdf infomation and convert to images.Use ImageMagick and XPdf",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "make test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CRAZYFAKE/node-read-pdf.git"
-  },
-  "keywords": [
-    "node.js",
-    "pdf",
-    "convert"
-  ],
-  "author": "crazyfake",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CRAZYFAKE/node-read-pdf/issues"
-  },
-  "homepage": "https://github.com/CRAZYFAKE/node-read-pdf#readme"
+    "name": "read-pdf",
+    "version": "0.1.1",
+    "description": "A module for node.js,get pdf infomation and convert to images.Use ImageMagick and XPdf",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CRAZYFAKE/node-read-pdf.git"
+    },
+    "keywords": [
+        "node.js",
+        "pdf",
+        "convert"
+    ],
+    "author": "crazyfake",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CRAZYFAKE/node-read-pdf/issues"
+    },
+    "homepage": "https://github.com/CRAZYFAKE/node-read-pdf#readme"
 }
