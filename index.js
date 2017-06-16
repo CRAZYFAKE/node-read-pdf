@@ -47,7 +47,7 @@ ReadPDF.prototype = {
      */
     pageNumbers: function() {
         return new Promise((resolve, reject) => {
-            this.getInfo().then((info) => {
+            this.pdfInfo().then((info) => {
                 resolve({ Pages: info['Pages'] });
             }, (err) => {
                 reject(err);

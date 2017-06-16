@@ -47,16 +47,20 @@ var readPDF = new ReadPDF('./slide.pdf', {
     outputName: 'testpdf',
     extension: 'jpg'
 });
+
+//convert pageNumber to image
 readPDF.convertPage(0).then((imagePath) => {
     console.log(imagePath)
 }, err => {
     console.log(err)
 });
 
+//get pdfinfo
 readPDF.pdfInfo().then((info) => {
     console.log(info)
 })
 
+//get pdf pageNumbers base on readPDF.pdfInfo()
 readPDF.pageNumbers().then((pageNumbers) => {
     console.log(pageNumbers)
 })
