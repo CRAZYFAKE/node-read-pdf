@@ -10,11 +10,13 @@
 
 [官网传送门](http://www.foolabs.com/xpdf/download.html)
 
-[Linux package] (ftp://ftp.foolabs.com/pub/xpdf/xpdfbin-linux-3.04.tar.gz)
+[Linux package](ftp://ftp.foolabs.com/pub/xpdf/xpdfbin-linux-3.04.tar.gz)
 
-[Windows package] (ftp://ftp.foolabs.com/pub/xpdf/xpdfbin-win-3.04.zip)
+[Windows package](ftp://ftp.foolabs.com/pub/xpdf/xpdfbin-win-3.04.zip)
 
-[Mac Package] (ftp://ftp.foolabs.com/pub/xpdf/xpdfbin-mac-3.04.tar.gz)
+[Mac Package](ftp://ftp.foolabs.com/pub/xpdf/xpdfbin-mac-3.04.tar.gz)
+
+eg:Centos 6.5
 
 ```shell
 [root@localhost xpdf]# tar -zxvf xpdfbin-linux-3.04.tar.gz
