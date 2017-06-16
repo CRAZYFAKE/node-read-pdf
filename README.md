@@ -16,7 +16,7 @@
 
 [Mac Package](ftp://ftp.foolabs.com/pub/xpdf/xpdfbin-mac-3.04.tar.gz)
 
-eg:Centos 6.5
+eg : Centos 6.5 Installation
 
 ```shell
 [root@localhost xpdf]# tar -zxvf xpdfbin-linux-3.04.tar.gz
