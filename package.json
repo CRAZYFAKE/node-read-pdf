@@ -1,6 +1,6 @@
 {
     "name": "read-pdf",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A module for node.js,get pdf infomation and convert to images.Use ImageMagick and XPdf",
     "main": "index.js",
     "directories": {

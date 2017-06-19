@@ -1,6 +1,6 @@
 /**
  * !
- * please install XPdf&ImageMagick
+ * please install XPdf & ImageMagick
  */
 const
     path = require("path"),
@@ -68,7 +68,7 @@ ReadPDF.prototype = {
     },
 
     /**
-     * Convert pages of pdf,use 
+     * Convert pages of pdf
      * @param {Interger} pageNumber the number of pdf pages
      */
     convertPage: function(pageNumber) {
@@ -114,6 +114,57 @@ ReadPDF.prototype = {
             });
         });
         return promise;
+    },
+
+    /**
+     * convert pages
+     * @param {Array} pageArr number array of pagenumbers
+     * TIP : If param is undefined,then conver all pages,if param is an array,then convert valid pages
+     */
+    convertPages: function(pageArr) {
+        return new Promise((resolve, reject) => {
+            this.pageNumbers().then(totalNums => {
+                try {
+                    let pageNums = parseInt(totalNums['Pages']);
+                    if (pageNums) {
+
+                        let validArr = []; //store valid page numbers
+                        //If pageArr exists and pagrArr is an Array
+                        if (pageArr && isArray(pageArr)) {
+                            for (let i = 0, arrLength = pageArr.length; i < arrLength; i++) {
+                                let page = parseInt(pageArr[i]);
+                                if (page >= 0 && page < pageNums) {
+                                    validArr.push(page);
+                                }
+                            }
+                            //If pageArr not exists,or pageArr is not an Array
+                        } else {
+                            for (let i = 0; i < pageNums; i++) {
+                                validArr.push(i);
+                            }
+                        }
+
+                        let convertList = [];
+                        //Convert all valid pages
+                        for (let i = 0, validLen = validArr.length; i < validLen; i++) {
+                            convertList.push(this.convertPage(validArr[i]));
+                        }
+                        Promise.all(convertList).then(results => {
+                            resolve(results);
+                        }, err => {
+                            reject(err);
+                        });
+
+                    } else {
+                        throw new Error('There is no pages for your pdf file');
+                    }
+                } catch (error) {
+                    reject(error);
+                }
+            }, err => {
+                reject(err);
+            });
+        });
     }
 };
 
@@ -148,7 +199,7 @@ function constructCommand(signal, attach) {
 }
 
 /**
- * Fromat String to Json，
+ * Fromat String to Json
  * @param {String/Json} toBeformat 
  */
 function format(toBeformat) {
@@ -178,6 +229,10 @@ function format(toBeformat) {
             throw new Error('Type of param not allowed');
     }
     return result;
+}
+
+function isArray(o) {
+    return Object.prototype.toString.call(o) === '[object Array]';
 }
 
 module.exports = ReadPDF;
