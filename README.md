@@ -1,3 +1,7 @@
+
+
+# read-pdf  [![Build Status](https://travis-ci.org/CRAZYFAKE/node-read-pdf.svg?branch=master](https://travis-ci.org/CRAZYFAKE/node-read-pdf)
+
 > Before use this module,you need install ImageMagick and Xpdf
 
 1.Install ImageMagick
