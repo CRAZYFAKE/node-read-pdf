@@ -27,7 +27,6 @@ readPDF.pdfInfo().then((info) => {
     //   'File size': '5891714 bytes',
     //   Optimized: 'yes',
     //   'PDF version': '1.6' }
-    //
 })
 
 //get pdf pageNumbers base on readPDF.pdfInfo()
