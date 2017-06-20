@@ -1,6 +1,6 @@
 
 
-# read-pdf  [![Build Status](https://travis-ci.org/CRAZYFAKE/node-read-pdf.svg?branch=master)](https://travis-ci.org/CRAZYFAKE/node-read-pdf)
+# read-pdf  [![Build Status](https://travis-ci.org/CRAZYFAKE/node-read-pdf.svg?branch=master)](https://travis-ci.org/CRAZYFAKE/node-read-pdf)  [![NPM Version](https://img.shields.io/npm/v/read-pdf.svg?style=flat)](https://www.npmjs.org/package/read-pdf)
 
 > Before use this module,you need install ImageMagick and Xpdf
 
