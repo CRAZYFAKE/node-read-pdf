@@ -7,7 +7,7 @@
         "test": "test"
     },
     "scripts": {
-        "test": "make test"
+        "test": "mocha tests/*.test.js"
     },
     "repository": {
         "type": "git",
@@ -23,5 +23,11 @@
     "bugs": {
         "url": "https://github.com/CRAZYFAKE/node-read-pdf/issues"
     },
-    "homepage": "https://github.com/CRAZYFAKE/node-read-pdf#readme"
+    "homepage": "https://github.com/CRAZYFAKE/node-read-pdf#readme",
+    "dependencies": {
+        "chai": "~1.9.2"
+    },
+    "devDependencies": {
+        "mocha": "~2.3.4"
+    }
 }

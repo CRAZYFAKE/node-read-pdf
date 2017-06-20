@@ -3,7 +3,9 @@ const
     expect = require('chai').expect,
     should = require('should');
 
-let readPDF = new ReadPDF('./test.pdf', {
+let path = process.cwd() + '/tests/test.pdf';
+
+let readPDF = new ReadPDF(path, {
     outputName: 'testpdf',
     extension: 'jpg'
 });
