@@ -1,7 +1,6 @@
 const
     ReadPDF = require('../index'),
-    expect = require('chai').expect,
-    should = require('should');
+    expect = require('chai').expect;
 
 let path = process.cwd() + '/tests/test.pdf';
 
